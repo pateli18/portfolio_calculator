@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundApp">
+    
+    <LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="60dip"
+    android:orientation="horizontal"
+    android:layout_marginBottom="5dip"
+    android:background="@color/headerBackground" >
+
+    <TextView
+        android:id="@+id/tradeSecuritiesHeading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/tradeSecurityHeading"
+        android:textSize="25sp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textColor="@color/white_text"
+         />
+
+	</LinearLayout>
+
+    <Spinner
+        android:id="@+id/buyOrSellSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/editTickerSymbol"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight ="1"
+        android:textSize="15sp"
+        android:inputType="textCapCharacters"
+        android:hint="@string/tickerSymbolInput" />
+	
+    <EditText
+        android:id="@+id/editTransactionDate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight ="1"
+        android:textSize="15sp"
+        android:inputType="date"
+        android:hint="@string/transactionDateInput" />
+
+    <EditText
+        android:id="@+id/editNumberOfShares"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight ="1"
+        android:textSize="15sp"
+        android:inputType="number"
+        android:hint="@string/numberOfSharesInput"/>
+
+    <EditText
+        android:id="@+id/editPricePerShare"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight ="1"
+        android:textSize="15sp"
+        android:inputType="numberDecimal"
+        android:hint="@string/pricePerShareInput"	/>
+
+    <EditText
+        android:id="@+id/editTransactionCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight ="1"
+        android:textSize="15sp"
+        android:inputType="numberDecimal"
+        android:hint="@string/transactionCostInput"	/>
+
+    <Button
+        android:id="@+id/submitTradeButton"
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_marginTop="10dip"
+        android:text="@string/transactionConfirmationButton" 
+        android:background="@drawable/trade_button"
+        android:textColor="@color/white_text"/>
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="70dip"
+    android:orientation="horizontal"
+	android:layout_margin="5dip"
+	android:background="@drawable/list_item">
+
+    <RadioButton
+        android:id="@+id/activeButton"
+        android:layout_width="30dip"
+        android:layout_height="30dip"
+        android:layout_gravity="center_vertical"
+        android:focusable="false"
+        android:focusableInTouchMode="false" />
+    
+   <TextView
+        android:id="@+id/tickerSymbol"
+        android:layout_width="wrap_content"
+        android:layout_height="65dip"
+        android:layout_weight="1"
+        android:gravity="center_vertical|left"
+        android:textSize="20sp"
+        android:text="@string/ticker"
+        android:layout_marginLeft="15dip"
+        android:layout_gravity="center_vertical"
+        />
+   
+   <TextView
+        android:id="@+id/price"
+        android:layout_width="75dip"
+        android:layout_height="wrap_content"
+        android:padding="5dip"
+        android:gravity="center"
+        android:textSize="15sp"
+        android:text="@string/zero"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="20dip"
+        android:textStyle="bold"
+        android:background="@color/headerBackground"
+        android:textColor="@color/white_text"
+        />
+
+   <TextView
+       android:id="@+id/grossReturn"
+       android:layout_width="60dip"
+       android:layout_height="60dip"
+       android:gravity="center"
+	   android:textSize="13sp"
+       android:text="@string/zero"
+       android:background="@drawable/return_positive"
+       android:layout_marginRight="5dip"
+       android:layout_gravity="center_vertical"
+       />
+      
+      <TextView
+       android:id="@+id/percentReturn"
+       android:layout_width="60dip"
+       android:layout_height="60dip"
+       android:gravity="center"
+       android:textSize="13sp"
+       android:text="@string/zero"
+       android:background="@drawable/return_positive"
+       android:layout_marginRight="5dip"
+       android:layout_gravity="center_vertical"/>
+   
+
+</LinearLayout>

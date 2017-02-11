@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/backgroundApp"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/viewHeader"
+        android:layout_width="match_parent"
+        android:layout_height="60dip"
+        android:layout_alignParentTop="true"
+        android:background="@color/headerBackground"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/preferencesButton"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_gravity="center_vertical|left"
+            android:background="@drawable/settings_button" />
+        
+        <Button
+            android:id="@+id/timeButton"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/time_select"
+            android:layout_marginLeft="5dip" />
+
+        <TextView
+            android:id="@+id/listHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/listHeader"
+            android:textColor="@color/white_text"
+            android:textSize="25sp" />
+        
+        <Button
+            android:id="@+id/returnSelectButton"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/return_toggle_select"
+            android:layout_marginRight="5dip" />
+
+        <Button
+            android:id="@+id/addNewButton"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_gravity="center_vertical|right"
+            android:background="@drawable/add_transaction" />
+    </LinearLayout>
+
+        <Spinner
+            android:id="@+id/dateSelectSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_below="@+id/viewHeader" />
+
+    <LinearLayout
+        android:id="@+id/spinnerList"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:layout_below="@+id/dateSelectSpinner" >
+
+        <Spinner
+            android:id="@+id/taxSpinner"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_margin="1dip"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/marketOrDividendSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_margin="1dip"
+            android:layout_weight="1" />
+
+        <Spinner
+            android:id="@+id/currentOrSoldSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="40dip"
+            android:layout_margin="1dip"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/ptr_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/divider"
+        android:layout_below="@+id/spinnerList"
+        android:layout_marginTop="5dip" >
+
+        <ListView
+            android:id="@+id/returnList"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:divider="@color/backgroundApp"
+            android:dividerHeight="2dip" />
+    </uk.co.senab.actionbarpulltorefresh.library.PullToRefreshLayout>
+
+   <LinearLayout
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/text"
+        android:orientation="horizontal"
+        android:layout_above="@+id/chart" />
+    
+    <LinearLayout
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="240dip"
+       	android:layout_above="@+id/radioGroupHolder"
+       	android:background="@color/white_text"
+        android:orientation="horizontal" >
+    </LinearLayout>
+    
+   <LinearLayout
+        android:id="@+id/radioGroupHolder"
+        android:layout_width="match_parent"
+        android:layout_height="40dip"
+        android:background="@drawable/closer_look_format"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"  >
+    
+    <RadioGroup
+            android:id="@+id/closerLookRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            
+            >
+
+            <RadioButton
+                android:id="@+id/closerLook1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked" />
+
+            <RadioButton
+                android:id="@+id/closerLook2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"/>
+
+            <RadioButton
+                android:id="@+id/closerLook3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"/>
+        </RadioGroup>
+     
+        </LinearLayout>
+
+</RelativeLayout>

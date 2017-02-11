@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/closerLookSecurityReturn" >
+
+   <TextView
+            android:id="@+id/returnNamePreTax"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/headerBackground"
+            android:textColor="@color/white_text"
+            android:gravity="center"
+            android:text="@string/totalReturnsLabel"
+            android:textSize="20sp"
+            android:layout_marginBottom="1dip" />
+    
+    <LinearLayout
+        android:id="@+id/pre_tax_return_headings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/returnNamePreTax"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/headerBackground"
+            android:textColor="@color/white_text"
+            android:gravity="center"
+            android:text="@string/pre_tax"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/grossAmountLabelPreTax"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dip"
+            android:layout_weight="1.5"
+            android:background="@color/headerBackground"
+            android:textColor="@color/white_text"
+            android:gravity="center"
+            android:text="@string/grossAmount"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/percentAmountLabelPreTax"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dip"
+            android:layout_marginRight="1dip"
+            android:layout_weight="1.5"
+            android:background="@color/headerBackground"
+            android:textColor="@color/white_text"
+            android:gravity="center"
+            android:text="@string/percentAmount"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/preTaxReturnList"
+        android:layout_width="fill_parent"
+        android:layout_height="80dip" >
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/post_tax_return_headings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/returnNamePostTax"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/headerBackground"
+            android:textColor="@color/white_text"
+            android:gravity="center"
+            android:text="@string/post_tax"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/grossAmountLabelPostTax"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dip"
+            android:layout_weight="1.5"
+            android:background="@color/headerBackground"
+            android:textColor="@color/white_text"
+            android:gravity="center"
+            android:text="@string/grossAmount"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/percentAmountLabelPostTax"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dip"
+            android:layout_marginRight="1dip"
+            android:layout_weight="1.5"
+            android:background="@color/headerBackground"
+            android:textColor="@color/white_text"
+            android:gravity="center"
+            android:text="@string/percentAmount"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/postTaxReturnList"
+        android:layout_width="fill_parent"
+        android:layout_height="80dip" >
+    </ListView>
+
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="text">#000000</color>
+
+    <color name="button">#FF0000</color>
+
+    
+    <color name="listItemNormal">#FFFFFF</color>
+    <color name="listItemPressed">#C0C0C0</color>
+    
+    <color name="return_positive_fill">#B0EEC3</color>
+    <color name="return_positive_border">#4AC948</color>
+    <color name="return_negative_fill">#80ff0000</color>
+    <color name="return_negative_border">#FF0000</color>
+    
+    <color name="backgroundApp">#EDEDED</color>    
+    <color name="white_text">#FFFFFF</color>
+    
+    <color name="headerBackground">#003399</color>
+    <color name="middleSpinner">#FFFF99</color>
+    <color name="endSpinners">#FFFF00</color>
+    <color name="tradeButtonNormalBeginning">#3366CC</color>
+    <color name="tradeButtonNormalEnd">#0033CC</color>
+    <color name="tradeButtonPressedBeginning">#FFCC99</color>
+    <color name="tradeButtonPressedEnd">#FF9900</color>
+    
+    <color name="summaryButtonNormalBeginning">#FF3333</color>
+    <color name="summaryButtonNormalEnd">#CC0000</color>
+
+    <color name="buttonPressed">#CCCCCC</color>
+    
+    <color name="graph_green">#88A618</color>
+    <color name="graph_blue">#DED359</color>
+    <color name="graph_yellow">#F29F05</color>
+     <color name="graph_orange">#F25C05</color>
+    <color name="graph_red">#D92525</color>
+    
+    
+</resources>
